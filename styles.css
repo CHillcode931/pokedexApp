@@ -25,8 +25,8 @@ h1{
 
 .card:hover{
     border: 3px solid red;
-    box-shadow: 20px 20px 10px 10px gray,
-    -20px -20px 10px 5px gray;
+    box-shadow: 20px 20px 10px 10px black,
+    -20px -20px 10px 5px black
 
 }
 
