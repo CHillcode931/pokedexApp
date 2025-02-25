@@ -9,12 +9,16 @@
     
 </head>
 <body>
-    <input type="search"
-    placeholder="search"
-    id="searchBar"
-    onkeyup="searchPokemon()">
+    
+    <input type="text",
+    placeholder="search",
+    id="searchBar",
+    onkeyup= "searchPokemon()">
     
     <h1 style="text-align: center;"><b><i><u>PokeDex</u></i></b></h1>
+    <button onclick="toggleMode()">dark/light</button>
+    
+    <div id="results"></div>
     
     <div id="root"></div>
     
