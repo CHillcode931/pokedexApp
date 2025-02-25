@@ -65,11 +65,16 @@ const p = getPokemon()
         
        let para=document.createElement("p")
         let div=document.createElement("div")
-        para.append(data.name)
+        para.append('height:', data.height);
+        let weight=document.createElement("p")
         div.append(para)
         resultsDiv.innerHTML=data.name
-        
-    
+        let img = document.createElement("img")
+        let moves=document.createElement("p")
+        resultsDiv.append(para, weight, img, )
+        weight.append('weight:', data.weight)
+        img.src=data.sprites.front_shiny
+    moves.append(data.moves)
      }
     )
 }
