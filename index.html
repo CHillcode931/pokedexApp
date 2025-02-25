@@ -13,15 +13,16 @@
     <input type="text",
     placeholder="search",
     id="searchBar",
-    onkeyup= "searchPokemon()">
+    onchange= "searchPokemon()">
     
+    <div><button onclick="toggleMode()">dark/light</button></div>
     <h1 style="text-align: center;"><b><i><u>PokeDex</u></i></b></h1>
-    <button onclick="toggleMode()">dark/light</button>
+
     
-    <div id="results"></div>
+    <div id="results">
     
     <div id="root"></div>
-    
+    </div>
     
 </body>
 
