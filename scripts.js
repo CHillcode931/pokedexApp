@@ -71,10 +71,12 @@ const p = getPokemon()
         resultsDiv.innerHTML=data.name
         let img = document.createElement("img")
         let moves=document.createElement("p")
-        resultsDiv.append(para, weight, img, )
+        let types= document.createElement('p')
+        resultsDiv.append(para, weight, img,types )
         weight.append('weight:', data.weight)
         img.src=data.sprites.front_shiny
-    moves.append(data.moves)
+        types.append('type:',data.types[0].type.name,", ", data.types[1].type.name)
+
      }
     )
 }
